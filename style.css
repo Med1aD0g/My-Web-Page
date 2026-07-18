@@ -324,3 +324,39 @@ margin:15px auto;
 border-radius:20px;
 
 }
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    gap: 80px;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #88c057;
+    box-shadow: 0 0 40px rgba(136,192,87,.4);
+    transition: .4s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+}
