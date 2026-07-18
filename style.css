@@ -360,3 +360,13 @@ border-radius:20px;
         height: 220px;
     }
 }
+.hero-text{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
