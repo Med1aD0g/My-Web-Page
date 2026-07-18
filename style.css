@@ -196,3 +196,131 @@ section{
 }
 
 }
+/* Background */
+
+.background-blur{
+
+position:fixed;
+
+width:500px;
+height:500px;
+
+border-radius:50%;
+
+filter:blur(120px);
+
+opacity:.15;
+
+z-index:-1;
+
+animation:move 20s infinite alternate;
+
+}
+
+.blur1{
+
+background:#88c057;
+
+top:-150px;
+left:-150px;
+
+}
+
+.blur2{
+
+background:#4f9dff;
+
+bottom:-150px;
+right:-150px;
+
+animation-delay:5s;
+
+}
+
+@keyframes move{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(120px,70px);
+
+}
+
+}
+
+/* Hero Layout */
+
+.hero{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:80px;
+
+}
+
+.hero-image img{
+
+width:320px;
+
+border-radius:50%;
+
+border:5px solid #88c057;
+
+box-shadow:0 0 40px rgba(136,192,87,.4);
+
+transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Better cards */
+
+.card{
+
+backdrop-filter:blur(10px);
+
+background:rgba(255,255,255,.03);
+
+}
+
+/* Better headings */
+
+section h2{
+
+margin-bottom:60px;
+
+position:relative;
+
+}
+
+section h2::after{
+
+content:"";
+
+display:block;
+
+width:70px;
+
+height:4px;
+
+background:#88c057;
+
+margin:15px auto;
+
+border-radius:20px;
+
+}
