@@ -1,0 +1,198 @@
+/* ==========================
+   Global
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d1117;
+    color:#f5f5f5;
+    line-height:1.6;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(13,17,23,.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:#88c057;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#88c057;
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero span{
+    color:#88c057;
+}
+
+.hero h2{
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:650px;
+    margin:auto;
+    opacity:.8;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#88c057;
+    color:#111;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 25px rgba(136,192,87,.4);
+}
+
+/* ==========================
+   Sections
+========================== */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:120px 25px;
+}
+
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card{
+    background:#161b22;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#88c057;
+    box-shadow:0 0 30px rgba(136,192,87,.15);
+}
+
+/* ==========================
+   Grid
+========================== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project{
+    text-align:center;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#999;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+section{
+    padding:90px 20px;
+}
+
+}
