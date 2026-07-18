@@ -22,14 +22,18 @@ body{
 /* ==========================
    Navbar
 ========================== */
-
 header{
     position:fixed;
     width:100%;
     top:0;
     left:0;
-    background:rgba(13,17,23,.8);
-    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
     z-index:1000;
 }
 
