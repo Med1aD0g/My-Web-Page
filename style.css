@@ -10,16 +10,15 @@
 }
 body{
     font-family:'Poppins',sans-serif;
-    background:linear-gradient(
-        135deg,
-        #1f2937 0%,
-        #243447 50%,
-        #2d3b2f 100%
+    background:radial-gradient(
+        circle at top,
+        #2d3b2f 0%,
+        #1f2937 40%,
+        #111827 100%
     );
     color:#f5f5f5;
     line-height:1.6;
 }
-
 /* ==========================
    Navbar
 ========================== */
